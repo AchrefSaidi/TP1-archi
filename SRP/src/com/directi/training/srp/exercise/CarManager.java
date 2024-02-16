@@ -12,11 +12,11 @@ public class CarManager {
     }
 
     public List<Car> getAllCars() {
-        return _carDatabase.getCars();
+        return _carDatabase.getAllCars();
     }
 
     public String getCarsNames() {
-        List<Car> allCars = _carDatabase.getCars();
-        return _carFormatter.getCarNames(allCars);
+        List<Car> allCars = _carDatabase.getAllCars();
+        return _carFormatter.getCarsNames(allCars);
     }
 }
